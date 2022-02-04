@@ -1,15 +1,16 @@
 import Head from 'next/head';
-import { blogPosts } from '../lib/data';
 
-export default function Home() {
+export default function About() {
 	return (
 		<div className="h-screen flex justify-center items-center">
 			<Head>
-				<title>Brandon McCray</title>
+				<title>Brandon | About</title>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
-			<h1>My portfolio</h1>
+			<main>
+				<h1>About</h1>
+			</main>
 		</div>
 	);
 }
