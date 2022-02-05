@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import AboutContent from '../components/AboutContent';
 
 export default function About() {
 	return (
@@ -9,7 +10,7 @@ export default function About() {
 			</Head>
 
 			<main>
-				<h1>About</h1>
+				<AboutContent />
 			</main>
 		</div>
 	);
