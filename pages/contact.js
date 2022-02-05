@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import ContactForm from '../components/ContactForm';
 
 export default function Contact() {
 	return (
@@ -9,7 +10,7 @@ export default function Contact() {
 			</Head>
 
 			<main>
-				<h1>Contact</h1>
+				<ContactForm />
 			</main>
 		</div>
 	);
