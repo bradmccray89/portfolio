@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { blogPosts } from '../lib/data';
+import Intro from '../components/Intro.js';
 
 export default function Home() {
 	return (
@@ -9,7 +9,7 @@ export default function Home() {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
-			<h1>My portfolio</h1>
+			<Intro />
 		</div>
 	);
 }
