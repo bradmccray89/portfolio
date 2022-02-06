@@ -11,6 +11,7 @@ export default function AboutContent() {
 					layout="fill"
 					objectFit="cover"
 					className="rounded-l-lg"
+					placeholder="blur"
 					priority
 				/>
 			</div>

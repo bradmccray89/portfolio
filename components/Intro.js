@@ -3,15 +3,15 @@ import Image from 'next/image';
 import laughImg from '../public/laugh.jpeg';
 
 export default function Intro() {
-	const words = ['Developer', 'Designer', 'Creator', 'Problem Solver'];
+	const words = ['a Developer', 'a Creator', 'a Problem Solver', 'an Engineer'];
 	return (
-		<div className="h-[32rem] w-5/6 flex justify-center items-center">
-			<div className="h-full w-1/2 flex flex-col leading-8 justify-center mx-10 p-10 rounded-lg bg-slate-200 dark:bg-slate-800 text-3xl md:text-5xl lg:text-7xl">
-				<div className="text-3xl md:text-5xl lg:text-7xl mb-5 transitions-all duration-300">
+		<div className="h-[28rem] w-full flex justify-center items-center">
+			<div className="h-full w-1/2 flex flex-col leading-8 justify-center mx-10 p-10 rounded-lg bg-slate-200 dark:bg-slate-800 text-3xl md:text-4xl lg:text-5xl">
+				<div className="text-3xl md:text-4xl lg:text-5xl mb-5 transitions-all duration-300">
 					{"Hello, I'm Brandon."}
 				</div>
-				<div className="text-3xl md:text-5xl lg:text-7xl mb-5 transitions-all duration-300">
-					{'I am a '}
+				<div className="text-3xl md:text-4xl lg:text-5xl mb-5 transitions-all duration-300">
+					{'I am '}
 				</div>
 				<Typewriter
 					options={{
