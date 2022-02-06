@@ -14,11 +14,31 @@ export default function AboutContent() {
 					priority
 				/>
 			</div>
-			<div className="p-5 h-[40rem] flex flex-col w-auto sm:w-96 md:w-[30rem] mx-3">
-				<div className="text-2xl w-full flex justify-center items-center h-auto pl-2 pb-2 ">
+			<div className="p-5 h-flex flex-col w-auto sm:w-96 md:w-[30rem] mx-3">
+				<div className="text-2xl w-full flex justify-center font-bold items-center h-auto pl-2 pb-2 ">
 					<h1>About Me</h1>
 				</div>
-				<div className="w-full h-auto">Content</div>
+				<div className="w-full h-auto">
+					Hi! My name is Brandon McCray. I have been doing full-stack development
+					since 2017, and I love what I do. I use my expertise every day to improve
+					online user experience and write clean, maintainable code.
+					<br />
+					<br />
+					I love to design sleek and simple user interfaces so everyone can enjoy
+					your site. Over the years I have worked with a variety of technologies
+					including Angular, React, Node.js, and C# among others, and I am always
+					looking to learn more.
+					<br />
+					<br />
+					In my spare time I enjoy playing video games, hiking, and watching movies.
+					I love to try new foods and drink a lot of coffee. Especially when I am
+					coding.
+					<br />
+					<br />
+					<div className="w-full flex justify-center">
+						Thanks for coming to my site!
+					</div>
+				</div>
 			</div>
 		</div>
 	);
