@@ -32,6 +32,11 @@ export default function Navbar() {
 							Blog
 						</a>
 					</Link>
+					<Link href="/projects">
+						<a className="px-3 py-2 mx-2 rounded text-gray-600 dark:text-gray-200 hover:bg-slate-300 dark:hover:bg-slate-600 transistions-all duration-300">
+							Projects
+						</a>
+					</Link>
 					<Link href="/contact">
 						<a className="px-3 py-2 mx-2 rounded text-gray-600 dark:text-gray-200 hover:bg-slate-300 dark:hover:bg-slate-600 transistions-all duration-300">
 							Contact

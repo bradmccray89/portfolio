@@ -24,10 +24,9 @@ export default function AboutContent() {
 					online user experience and write clean, maintainable code.
 					<br />
 					<br />
-					I love to design sleek and simple user interfaces so everyone can enjoy
-					your site. Over the years I have worked with a variety of technologies
-					including Angular, React, Node.js, and C# among others, and I am always
-					looking to learn more.
+					I love to design sleek and simple user interfaces for all to enjoy. Over
+					the years I have worked with a variety of technologies including Angular,
+					React, Node.js, and C# among others, and I am always looking to learn more.
 					<br />
 					<br />
 					In my spare time I enjoy playing video games, hiking, and watching movies.

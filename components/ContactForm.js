@@ -15,10 +15,27 @@ export default function ContactForm() {
 				/>
 			</div>
 			<div className="p-5 flex flex-col w-auto sm:w-96 md:w-[30rem] mx-3">
-				<div className="text-2xl w-full h-auto pl-2 pb-2 ">
+				<div className="flex justify-center text-2xl w-full h-auto pl-2 pb-2 ">
 					<h1>Contact</h1>
 				</div>
-				<form action="/api/form" method="POST">
+				<div className="w-full h-auto m-5 p-3">
+					<p className="">
+						{
+							'I am not currently looking for work, but I am always open to discussing new opportunities. Feel free to reach out and I will try my best to get back to you.'
+						}
+					</p>
+				</div>
+				<div className="my-3 flex justify-center items-center">
+					<a
+						href="mailto:bradmccray89@gmail.com"
+						target="_blank"
+						rel="noopener noreferrer"
+						className="py-2 px-12 justify-center items-center shadow-sm text-sm font-medium rounded-md bg-pink-500 hover:bg-pink-600 dark:bg-sky-500 dark:hover:bg-sky-700"
+					>
+						Email me!
+					</a>
+				</div>
+				{/* <form action="/api/form" method="POST">
 					<div className="grid grid-cols-6 md:grid-cols-12 gap-6">
 						<div className="col-span-6 md:col-span-12 mt-2">
 							<label htmlFor="name" className="block text-sm font-medium">
@@ -66,7 +83,7 @@ export default function ContactForm() {
 							Send
 						</button>
 					</div>
-				</form>
+				</form> */}
 			</div>
 		</div>
 	);
