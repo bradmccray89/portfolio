@@ -7,10 +7,10 @@ export default function Intro() {
 	return (
 		<div className="h-[28rem] w-full flex justify-center items-center">
 			<div className="h-full w-1/2 flex flex-col leading-8 justify-center mx-10 p-10 rounded-lg bg-slate-200 dark:bg-slate-800 text-3xl md:text-4xl lg:text-5xl">
-				<div className="text-3xl md:text-4xl lg:text-5xl mb-5 transitions-all duration-300">
+				<div className="font-fira text-3xl md:text-4xl lg:text-5xl mb-5 transitions-all duration-300">
 					{"Hello, I'm Brandon."}
 				</div>
-				<div className="text-3xl md:text-4xl lg:text-5xl mb-5 transitions-all duration-300">
+				<div className="font-fira text-3xl md:text-4xl lg:text-5xl mb-5 transitions-all duration-300">
 					{'I am '}
 				</div>
 				<Typewriter

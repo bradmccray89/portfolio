@@ -31,11 +31,11 @@ export default function Navbar() {
 							About
 						</a>
 					</Link>
-					<Link href="/blog">
+					{/* <Link href="/blog">
 						<a className="px-3 py-2 mx-2 rounded text-gray-600 dark:text-gray-200 hover:bg-slate-300 dark:hover:bg-slate-600 transistions-all duration-300">
 							Blog
 						</a>
-					</Link>
+					</Link> */}
 					<Link href="/projects">
 						<a className="px-3 py-2 mx-2 rounded text-gray-600 dark:text-gray-200 hover:bg-slate-300 dark:hover:bg-slate-600 transistions-all duration-300">
 							Projects

@@ -8,8 +8,10 @@ export default function Blog() {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
-			<main>
-				<h1>Blog</h1>
+			<main className="flex flex-col items-center justify-center">
+				<h1>This page is still in progress.</h1>
+				<br />
+				<h1>Come back later to see what it has to offer.</h1>
 			</main>
 		</div>
 	);
