@@ -1,7 +1,6 @@
 import Typewriter from 'typewriter-effect';
 import Image from 'next/image';
 import laughImg from '../public/laugh.jpeg';
-import portrait from '../public/portrait.jpeg';
 
 export default function Intro() {
 	const words = ['a Developer', 'a Creator', 'a Problem Solver', 'an Engineer'];
