@@ -6,7 +6,7 @@ export default function RepoItem({ repo, background }) {
 	return (
 		<a
 			href={repo.html_url}
-			className="h-[12rem] w-[16rem] relative flex justify-start rounded-lg hover:z-50 hover:scale-125 transition-transform duration-300"
+			className="h-[12rem] w-[16rem] relative flex justify-start rounded-lg md:hover:z-50 md:hover:scale-125 transition-transform duration-300"
 			target="_blank"
 			rel="noopener noreferrer"
 		>

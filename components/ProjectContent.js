@@ -14,7 +14,7 @@ export default function ProjectContent({ repos }) {
 			<h1 className="text-4xl font-bold text-center mb-8 text-gray-800 dark:text-gray-200">
 				Current Github Projects
 			</h1>
-			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8 h-[28rem] overflow-scroll lg:overflow-visible px-2">
+			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8 h-[28rem] overflow-y-scroll lg:overflow-visible px-2">
 				{repos.map((repo, index) => (
 					<RepoItem repo={repo} background={backgrounds[index % 6]} key={index} />
 				))}
