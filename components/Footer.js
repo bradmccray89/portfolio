@@ -1,8 +1,6 @@
-import Link from 'next/link';
-
 export default function Footer() {
 	return (
-		<div className="bg-gray-200 dark:bg-gray-900 flex justify-center items-center flex-wrap py-3 px-10 z-50 h-20 w-full fixed bottom-0">
+		<div className="bg-gray-200 dark:bg-gray-900 flex justify-center items-center py-3 px-10 z-50 h-20 w-full fixed bottom-0">
 			<a
 				href="https://github.com/bradmccray89"
 				className="h-8 w-8 p-2 mx-3 rounded hover:bg-slate-300 dark:hover:bg-slate-600"
