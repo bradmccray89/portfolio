@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import ContactForm from '../components/ContactForm';
+import Layout from '../components/Layout';
 
 export default function Contact() {
 	return (
@@ -9,9 +10,9 @@ export default function Contact() {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
-			<main>
+			<Layout>
 				<ContactForm />
-			</main>
+			</Layout>
 		</div>
 	);
 }

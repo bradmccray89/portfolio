@@ -21,28 +21,28 @@ export default function Navbar() {
 		return (
 			<>
 				<Link href="/">
-					<a className="px-3 py-2 mx-2 rounded text-gray-600 dark:text-gray-200 hover:bg-slate-300 dark:hover:bg-slate-600 transistions-all duration-300">
+					<a className="w-full flex justify-center px-3 py-2 mx-2 rounded text-gray-600 dark:text-gray-200 hover:bg-slate-300 dark:hover:bg-slate-600 transistions-all duration-300">
 						Home
 					</a>
 				</Link>
 				<Link href="/about">
-					<a className="px-3 py-2 mx-2 rounded text-gray-600 dark:text-gray-200 hover:bg-slate-300 dark:hover:bg-slate-600 transistions-all duration-300">
+					<a className="w-full flex justify-center px-3 py-2 mx-2 rounded text-gray-600 dark:text-gray-200 hover:bg-slate-300 dark:hover:bg-slate-600 transistions-all duration-300">
 						About
 					</a>
 				</Link>
 				<Link href="/projects">
-					<a className="px-3 py-2 mx-2 rounded text-gray-600 dark:text-gray-200 hover:bg-slate-300 dark:hover:bg-slate-600 transistions-all duration-300">
+					<a className="w-full flex justify-center px-3 py-2 mx-2 rounded text-gray-600 dark:text-gray-200 hover:bg-slate-300 dark:hover:bg-slate-600 transistions-all duration-300">
 						Projects
 					</a>
 				</Link>
 				<Link href="/contact">
-					<a className="px-3 py-2 mx-2 rounded text-gray-600 dark:text-gray-200 hover:bg-slate-300 dark:hover:bg-slate-600 transistions-all duration-300">
+					<a className="w-full flex justify-center px-3 py-2 mx-2 rounded text-gray-600 dark:text-gray-200 hover:bg-slate-300 dark:hover:bg-slate-600 transistions-all duration-300">
 						Contact
 					</a>
 				</Link>
 				<Link href="/Brandon_McCray_resume.pdf">
 					<a
-						className="px-3 py-2 mx-2 rounded text-gray-600 dark:text-gray-200 hover:bg-slate-300 dark:hover:bg-slate-600 transistions-all duration-300"
+						className="w-full flex justify-center px-3 py-2 mx-2 rounded text-gray-600 dark:text-gray-200 hover:bg-slate-300 dark:hover:bg-slate-600 transistions-all duration-300"
 						target="_blank"
 						rel="noopener noreferrer"
 					>
@@ -54,7 +54,7 @@ export default function Navbar() {
 	};
 
 	return (
-		<nav className="fixed bg-gray-200 dark:bg-gray-900 flex justify-center items-center flex-wrap py-3 px-10 z-50 h-20 w-full">
+		<nav className="fixed bg-gray-200 dark:bg-gray-900 flex justify-center items-center flex-wrap py-3 px-5 sm:px-10 z-50 h-20 w-full">
 			<div className="inline-flex w-1/3 order-1">
 				<Link href="/">
 					<a className="inline-flex justify-center items-center">
@@ -64,62 +64,57 @@ export default function Navbar() {
 					</a>
 				</Link>
 			</div>
-			<div className="w-1/3 inline-flex justify-center items-center w-full order-3 lg:order-2">
+			<div className="w-1/3 inline-flex justify-center items-center w-full order-3 lg:order-2 z-10">
 				<ul className="hidden lg:flex lg:gap-6">{renderNavigationItems()}</ul>
 				<ul
 					ref={navigationMobileRef}
 					className={`lg:hidden absolute flex flex-col w-full top-20 right-0 py-3 items-center text-white bg-gray-200 dark:bg-gray-900 transform translate-x-full gap-2 ${
 						mounted ? 'transition-transform' : ''
 					}`}
+					onClick={toggleMobileNavigation}
 				>
 					{renderNavigationItems()}
 				</ul>
 				<button
-					className="inline-flex p-3 text-gray-600 dark:text-gray-200 rounded-lg lg:hidden ml-auto outline-none"
+					className="inline-flex p-3 text-gray-600 dark:text-gray-200 rounded-lg lg:hidden ml-auto outline-none transition-all duration-300"
 					aria-label="Toggle mobile menu"
 					type="button"
 					onClick={toggleMobileNavigation}
 				>
-					<svg
-						className="w-6 h-6"
-						fill="none"
-						stroke="currentColor"
-						viewBox="0 0 24 24"
-						xmlns="http://www.w3.org/2000/svg"
-					>
-						<path
-							strokeLinecap="round"
-							strokeLinejoin="round"
-							strokeWidth={2}
-							d="M4 6h16M4 12h16M4 18h16"
-						/>
-					</svg>
+					{mobileNavOpen ? (
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							className="h-6 w-6"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
+						>
+							<path
+								strokeLinecap="round"
+								strokeLinejoin="round"
+								strokeWidth={2}
+								d="M6 18L18 6M6 6l12 12"
+							/>
+						</svg>
+					) : (
+						<svg
+							className="w-6 h-6"
+							fill="none"
+							stroke="currentColor"
+							viewBox="0 0 24 24"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								strokeLinecap="round"
+								strokeLinejoin="round"
+								strokeWidth={2}
+								d="M4 6h16M4 12h16M4 18h16"
+							/>
+						</svg>
+					)}
 				</button>
-				{/* <button
-					aria-label="Toggle mobile menu"
-					type="button"
-					ref={mobileIconRef}
-					onClick={toggleMobileNavigation}
-					className="md:hidden order-3 cursor-pointer relative w-5 h-6"
-				>
-					<span
-						className={`transform transition-transform duration-300 absolute h-1 w-full bg-primary rounded-lg left-0 top-1 ${
-							mobileNavOpen ? 'rotate-135 top-3' : 'rotate-0'
-						}`}
-					></span>
-					<span
-						className={`absolute transition-opacity duration-300 h-1 w-full bg-primary rounded-lg left-0 top-3 ${
-							mobileNavOpen ? 'opacity-0 -left-40' : 'opacity-100'
-						}`}
-					></span>
-					<span
-						className={`transform transition-transform duration-300 absolute h-1 w-full bg-primary rounded-lg left-0 ${
-							mobileNavOpen ? '-rotate-135 top-3' : 'rotate-0 top-5'
-						}`}
-					></span>
-				</button> */}
 			</div>
-			<div className="inline-flex justify-center w-1/3 order-2 lg:order-3">
+			<div className="inline-flex justify-center lg:justify-end w-1/3 order-2 lg:order-3">
 				<button
 					aria-label="Toggle Dark Mode"
 					type="button"

@@ -1,33 +1,32 @@
 import Typewriter from 'typewriter-effect';
 import Image from 'next/image';
 import laughImg from '../public/laugh.jpeg';
+import portrait from '../public/portrait.jpeg';
 
 export default function Intro() {
 	const words = ['a Developer', 'a Creator', 'a Problem Solver', 'an Engineer'];
 	return (
-		<div className="h-[28rem] w-full flex justify-center items-center">
-			<div className="h-full w-1/2 flex flex-col leading-8 justify-center mx-10 p-10 rounded-lg bg-slate-200 dark:bg-slate-800 text-3xl md:text-4xl lg:text-5xl">
-				<div className="font-fira text-3xl md:text-4xl lg:text-5xl mb-5 transitions-all duration-300">
+		<div className="h-[75%] w-[95%] lg:w-[80%] flex flex-col lg:flex-row justify-center items-center overflow-scroll lg:overflow-visible">
+			<div className="h-[25rem] w-auto sm:w-[80%] lg:w-1/2 flex flex-col justify-center lg:mx-10 p-8 lg:p-10 rounded-lg bg-slate-200 dark:bg-slate-800 text-2xl sm:text-3xl md:text-4xl font-fira lg:order-1 order-2">
+				<div className="mb-5 transitions-all duration-300">
 					{"Hello, I'm Brandon."}
 				</div>
-				<div className="font-fira text-3xl md:text-4xl lg:text-5xl mb-5 transitions-all duration-300">
-					{'I am '}
-				</div>
+				<div className="mb-5 transitions-all duration-300">{'I am'}</div>
 				<Typewriter
 					options={{
 						strings: words,
 						autoStart: true,
 						loop: true,
-						wrapperClassName: 'font-fira transitions-all duration-300',
+						wrapperClassName: 'transitions-all duration-300',
 					}}
 				/>
 			</div>
-			<div className="h-[32rem] w-[32rem] flex flex-col justify-center items-center mx-10">
+			<div className="min-h-64 min-w-64 sm:h-[20rem] sm:w-[20rem] lg:h-[32rem] lg:w-[32rem] flex justify-center items-center m-10 lg:order-2 order-1">
 				<Image
 					src={laughImg}
 					alt="Laugh Image"
 					objectFit="cover"
-					className="rounded-full h-[32rem] w-[32rem]"
+					className="rounded-full"
 					priority
 				/>
 			</div>

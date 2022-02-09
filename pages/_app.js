@@ -1,13 +1,17 @@
 import { ThemeProvider } from 'next-themes';
 import '../styles/globals.css';
-import Layout from '../components/Layout';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+import { AnimatePresence } from 'framer-motion';
 
 function MyApp({ Component, pageProps }) {
 	return (
 		<ThemeProvider attribute="class">
-			<Layout>
+			<Navbar />
+			<AnimatePresence>
 				<Component {...pageProps} />
-			</Layout>
+			</AnimatePresence>
+			<Footer />
 		</ThemeProvider>
 	);
 }

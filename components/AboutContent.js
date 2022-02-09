@@ -3,8 +3,8 @@ import alaskaImg from '../public/alaska.jpg';
 
 export default function AboutContent() {
 	return (
-		<div className="flex bg-slate-200 dark:bg-slate-800 h-full w-auto rounded-lg columns-2 scroll-auto">
-			<div className="h-auto w-0 md:w-72 sm:w-48 relative">
+		<div className="h-[25rem] w-auto md:h-auto bg-slate-200 dark:bg-slate-800 rounded-lg flex">
+			<div className="h-auto w-0 sm:w-48 md:w-72 relative">
 				<Image
 					src={alaskaImg}
 					alt="Alaska Image"
@@ -15,11 +15,11 @@ export default function AboutContent() {
 					priority
 				/>
 			</div>
-			<div className="p-5 h-flex flex-col w-auto sm:w-96 md:w-[30rem] mx-3">
+			<div className="p-5 flex flex-col w-auto sm:w-96 mx-3">
 				<div className="text-2xl w-full flex justify-center font-bold items-center h-auto pl-2 pb-2 ">
 					<h1>About Me</h1>
 				</div>
-				<div className="w-full h-auto">
+				<div className="w-full h-auto px-2 overflow-scroll lg:overflow-visible">
 					Hi! My name is Brandon McCray. I have been doing full-stack development
 					since 2017, and I love what I do. I use my expertise every day to improve
 					online user experience and write clean, maintainable code.

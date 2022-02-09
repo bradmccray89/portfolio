@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import ProjectContent from '../components/ProjectContent';
 import axios from 'axios';
+import Layout from '../components/Layout';
 
 export default function Projects({ repos }) {
 	return (
@@ -10,9 +11,9 @@ export default function Projects({ repos }) {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
-			<main>
+			<Layout>
 				<ProjectContent repos={repos} />
-			</main>
+			</Layout>
 		</div>
 	);
 }

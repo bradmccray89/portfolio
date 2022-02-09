@@ -3,8 +3,8 @@ import laptopImg from '../public/laptop.jpg';
 
 export default function ContactForm() {
 	return (
-		<div className="flex bg-slate-200 dark:bg-slate-800 h-full w-auto rounded-lg columns-2 scroll-auto">
-			<div className="h-auto w-0 md:w-72 sm:w-48 relative">
+		<div className="flex bg-slate-200 dark:bg-slate-800 h-[20rem] w-auto rounded-lg columns-2">
+			<div className="h-auto w-0 md:w-64 sm:w-48 relative">
 				<Image
 					src={laptopImg}
 					alt="Laptop Image"
@@ -14,18 +14,18 @@ export default function ContactForm() {
 					priority
 				/>
 			</div>
-			<div className="p-5 flex flex-col w-auto sm:w-96 md:w-[30rem] mx-3">
-				<div className="flex justify-center text-2xl w-full h-auto pl-2 pb-2 ">
+			<div className="p-5 flex flex-col justify-evenly w-auto sm:w-96 md:w-[30rem] mx-3">
+				<div className="flex justify-center text-2xl w-auto h-auto px-2 pb-2 ">
 					<h1>Contact</h1>
 				</div>
-				<div className="w-full h-auto m-5 p-3">
-					<p className="">
+				<div className="w-auto h-auto m-2 flex flex-1 self-start">
+					<p>
 						{
 							'I am not currently looking for work, but I am always open to discussing new opportunities. Feel free to reach out and I will try my best to get back to you.'
 						}
 					</p>
 				</div>
-				<div className="my-3 flex justify-center items-center">
+				<div className="my-3 flex flex-1 justify-center items-center">
 					<a
 						href="mailto:bradmccray89@gmail.com"
 						target="_blank"

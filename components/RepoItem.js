@@ -18,9 +18,9 @@ export default function RepoItem({ repo, background }) {
 			/>
 			<div
 				title={repo.description}
-				className="h-full w-full flex justify-center items-center flex-col rounded-lg z-10 hover:z-20 backdrop-grayscale hover:backdrop-grayscale-0 transition-colors duration-300"
+				className="h-full w-full flex justify-center items-center flex-col rounded-lg z-10 hover:z-20 lg:backdrop-grayscale hover:backdrop-grayscale-0 transition-colors duration-300"
 			>
-				<h1 className="p-3 capitalize bg-gray-300 dark:bg-slate-800 rounded-full backdrop-blur subpixel-antialiased">
+				<h1 className="p-3 capitalize bg-gray-300 dark:bg-slate-800 rounded-full subpixel-antialiased">
 					{name}
 				</h1>
 			</div>
