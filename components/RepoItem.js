@@ -15,6 +15,7 @@ export default function RepoItem({ repo, background }) {
 				alt="background"
 				className="z-0 w-full h-full rounded-lg"
 				layout="fill"
+				placeholder="blur"
 			/>
 			<div
 				title={repo.description}

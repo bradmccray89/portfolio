@@ -26,6 +26,7 @@ export default function Intro() {
 					alt="Laugh Image"
 					objectFit="cover"
 					className="rounded-full"
+					placeholder="blur"
 					priority
 				/>
 			</div>

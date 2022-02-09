@@ -11,6 +11,7 @@ export default function ContactForm() {
 					layout="fill"
 					objectFit="cover"
 					className="rounded-l-lg"
+					placeholder="blur"
 					priority
 				/>
 			</div>
