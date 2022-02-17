@@ -54,7 +54,7 @@ export default function Footer() {
 					</svg>
 				</a>
 			</div>
-			<p className="text-xs">
+			<p className="text-xs text-center">
 				Created by{' '}
 				<a
 					className="font-extrabold hover:underline"
