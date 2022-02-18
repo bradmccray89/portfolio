@@ -1,7 +1,9 @@
 import Head from 'next/head';
-import ProjectContent from '../components/ProjectContent';
+import dynamic from 'next/dynamic';
 import axios from 'axios';
 import Layout from '../components/Layout';
+
+const ProjectContent = dynamic(() => import('../components/ProjectContent'));
 
 export default function Projects({ repos }) {
 	return (
