@@ -1,6 +1,7 @@
 import Head from 'next/head';
-import Intro from '../components/Intro.js';
+import dynamic from 'next/dynamic';
 import Layout from '../components/Layout.js';
+const Intro = dynamic(() => import('../components/Intro.js'));
 
 export default function Home() {
 	return (
