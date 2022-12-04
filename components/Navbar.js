@@ -20,32 +20,42 @@ export default function Navbar() {
 		return (
 			<>
 				<Link href="/">
-					<a className="flex justify-center w-full px-3 py-2 mx-2 text-gray-600 duration-300 rounded dark:text-gray-200 hover:bg-slate-300 dark:hover:bg-slate-600 transistions-all">
+					<a className="flex items-center justify-center w-full px-3 py-2 mx-2 text-gray-600 duration-300 rounded dark:text-gray-200 hover:bg-slate-300 dark:hover:bg-slate-600 transistions-all">
 						Home
 					</a>
 				</Link>
 				<Link href="/about">
-					<a className="flex justify-center w-full px-3 py-2 mx-2 text-gray-600 duration-300 rounded dark:text-gray-200 hover:bg-slate-300 dark:hover:bg-slate-600 transistions-all">
+					<a className="flex items-center justify-center w-full px-3 py-2 mx-2 text-gray-600 duration-300 rounded dark:text-gray-200 hover:bg-slate-300 dark:hover:bg-slate-600 transistions-all">
 						About
 					</a>
 				</Link>
 				<Link href="/projects">
-					<a className="flex justify-center w-full px-3 py-2 mx-2 text-gray-600 duration-300 rounded dark:text-gray-200 hover:bg-slate-300 dark:hover:bg-slate-600 transistions-all">
+					<a className="flex items-center justify-center w-full px-3 py-2 mx-2 text-gray-600 duration-300 rounded dark:text-gray-200 hover:bg-slate-300 dark:hover:bg-slate-600 transistions-all">
 						Projects
 					</a>
 				</Link>
 				<Link href="/contact">
-					<a className="flex justify-center w-full px-3 py-2 mx-2 text-gray-600 duration-300 rounded dark:text-gray-200 hover:bg-slate-300 dark:hover:bg-slate-600 transistions-all">
+					<a className="flex items-center justify-center w-full px-3 py-2 mx-2 text-gray-600 duration-300 rounded dark:text-gray-200 hover:bg-slate-300 dark:hover:bg-slate-600 transistions-all">
 						Contact
 					</a>
 				</Link>
-				<Link href="/Brandon_McCray_resume.pdf">
-					<a
-						className="flex justify-center w-full px-3 py-2 mx-2 text-gray-600 duration-300 rounded dark:text-gray-200 hover:bg-slate-300 dark:hover:bg-slate-600 transistions-all"
-						target="_blank"
-						rel="noopener noreferrer">
-						Resume
-					</a>
+				<Link href="/Brandon_McCray_resume.pdf" passHref>
+					<div className="flex items-center justify-center w-full px-3 py-2 mx-2 text-gray-600 duration-300 rounded cursor-pointer gap-x-2 dark:text-gray-200 hover:bg-slate-300 dark:hover:bg-slate-600 transistions-all">
+						<a className="" target="_blank" rel="noopener noreferrer">
+							Resume
+						</a>
+						<svg
+							width="16px"
+							height="16px"
+							viewBox="0 0 24 24"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M14 5a1 1 0 1 1 0-2h6a1 1 0 0 1 1 1v6a1 1 0 1 1-2 0V6.414l-9.293 9.293a1 1 0 0 1-1.414-1.414L17.586 5H14zM3 7a2 2 0 0 1 2-2h5a1 1 0 1 1 0 2H5v12h12v-5a1 1 0 1 1 2 0v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"
+								fill="currentColor"
+							/>
+						</svg>
+					</div>
 				</Link>
 			</>
 		);
